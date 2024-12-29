@@ -5,6 +5,7 @@ export default function Input({
   type = "text",
   label = "",
   value = "",
+  name = "",
   onChange,
   className,
   placeholder = "",
@@ -27,6 +28,7 @@ export default function Input({
           type={inputType}
           id={uniqueId}
           value={value || ""}
+          name={name}
           onChange={onChange}
           className="border p-2 w-full"
           placeholder={placeholder}
