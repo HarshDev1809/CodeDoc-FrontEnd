@@ -10,6 +10,7 @@ export default function Input({
   className,
   placeholder = "",
   view = false,
+  disabled = false
 }) {
   const [inputType, setInputType] = useState(type);
   const uniqueId = useId();
@@ -32,6 +33,7 @@ export default function Input({
           onChange={onChange}
           className="border p-2 w-full"
           placeholder={placeholder}
+          disabled = {disabled}
         />
         {type === 'password' && view && (
           <button

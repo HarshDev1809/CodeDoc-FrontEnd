@@ -1,0 +1,22 @@
+@keyframes slider-menu {
+    from {left:-300px;}
+    to {left:0;}
+}
+
+@keyframes slider-close {
+    from{left:0;}
+    to{left:-300px;}
+}
+
+.sliderMenu{
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    animation-name: slider-menu;
+    animation-duration: 300ms;
+}
+
+.sliderClose{
+    animation-name: slider-close;
+    animation-duration: 300ms;
+}

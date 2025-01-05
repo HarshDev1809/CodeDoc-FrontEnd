@@ -1,7 +1,7 @@
 'use client'
 import axios from 'axios';
-const URL = `https://code-doc-api.onrender.com`;
-// const URL = `http://localhost:8000`;
+// const URL = `https://code-doc-api.onrender.com`;
+const URL = `http://localhost:8000`;
 const userDetails = JSON.parse(localStorage.getItem('userDetails'));
 const token = userDetails ? userDetails.token : null;
 
